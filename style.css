@@ -1,8 +1,9 @@
 body {
+    width: 1185px;
     display:flex;
     flex-direction:column;
-    justify-content: space-between;
-    align-items: center;
+    
+    align-content: center;
 }
 
 header {
@@ -20,6 +21,7 @@ img{
     width: 270px;
     height: 120px;
     border: 1px solid #EBEBF1;
+    margin: 0px 10px;
 
 }
 .content {
@@ -28,29 +30,9 @@ img{
     flex-grow: 2;
     display: flex;
     font-size: 30px; 
-    align-items: space-between;   
+    justify-content: flex-start; 
+    align-content: flex-start;
     margin: 20px 0px;
-}
-
-.left-block {
-    order: 1;
-    font-size: 30px;
-    
-    top: 100px;
-    min-width: 300px;
-    height: 300px;
-    border-style: solid;
-    text-align: center;
-}
-
-.right-block {  
-    order:2;
-    font-size: 30px;
-    top: 100px;
-    min-width: 300px;
-    height: 300px;
-    border-style: solid;
-    text-align: center;
 }
 
 footer {
