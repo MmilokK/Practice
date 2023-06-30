@@ -1,21 +1,11 @@
-body {
-    
+body { 
     display:flex;
     flex-direction:column;
-    align-content: center;
-    justify-content: center;
-    
-
-    
-    
 }
 
 header {
-
-    order: -1;
     display: flex;
     justify-content: center;
-    flex-grow:1;
     font-size: 30px;
     width: 100%;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
@@ -23,8 +13,7 @@ header {
 }
 
 h1{
-    
-    order: 2;
+    margin: 100px auto 0px auto; 
     color: #121920;
     font-weight: 500;
     font-size: 36px;
@@ -35,9 +24,9 @@ h1{
 img{
     width: 270px;
     height: 120px;
-    border: 1px solid #EBEBF1;
-    margin: 0px 10px;
-    border-radius: 10px;
+    
+   
+    
 
 }
 .logo{
@@ -74,9 +63,11 @@ input{
 }
 
 .label{
-    margin-top: 100px;
-    width: 1185px;
-    align-self: center;
+    
+    width: 1170px;
+    justify-content: flex-start; 
+    margin: 100px auto 0px auto; 
+    
 }
 
 a {
@@ -102,19 +93,16 @@ a {
 
 .content {
     align-self: center;
-    width: 1185px;
-    order: 2;
     flex-wrap: wrap;
-    flex-grow: 2;
     display: flex;
-    font-size: 30px; 
     justify-content: flex-start; 
-    align-content: flex-start;
-    margin: 20px 0px;
+    margin: 20px auto; 
+    max-width: 1170px;
+    
 }
 
 footer {
-    order:2;
+
     flex-grow:1;
     font-size: 30px;
     text-align: center;
@@ -123,6 +111,12 @@ footer {
     align-self: flex-end;
 }
 
-img:hover {
+.partner:hover {
     box-shadow: 0px 0px 10px  rgba(113, 113, 116, 0.2);
+}
+
+.partner{
+    border: 1px solid #EBEBF1;
+    margin: 5px 10px;
+    border-radius: 10px;
 }
