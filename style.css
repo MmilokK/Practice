@@ -100,6 +100,88 @@ footer {
     border: 1px solid #EBEBF1;
     margin: 5px 10px;
     border-radius: 10px;
+    transition:all 2s;
+}
+
+#henkel:hover{
+    transform: rotate(30turn);
+}
+
+#johndeere:hover{
+    transform: scale(50);
+
+}
+
+#mcdonalds:hover{
+    transform: skew(180deg, 200deg);
+}
+
+#ikea:hover{
+    transform: translate(15000%, 15000%)
+}
+
+@keyframes woosh{
+    0%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(50); 
+    }
+    60%{
+        transform: scale(0.005);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#reebok:hover{
+    animation-name: woosh;
+    animation-duration: 2s;
+}
+
+@keyframes wou{
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(360deg);  
+    }
+
+    60%{
+        transform: rotate(-72000deg); 
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#nike:hover{
+    animation-name: wou;
+    animation-duration: 5s;
+}
+
+@keyframes uff{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: translate(100%, 0%) 
+    }
+
+    50%{
+        transform: translate(0%, 100%) 
+    }
+    75%{
+        transform: translate(-100%, 0%)
+    }
+    100%{
+        transform: translate(0%, -100%)
+    }
+}
+
+#caterpillar:hover{
+    animation-name: uff;
+    animation-duration: 5s;
 }
 
 
