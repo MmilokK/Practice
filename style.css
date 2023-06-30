@@ -24,9 +24,6 @@ h1{
 img{
     width: 270px;
     height: 120px;
-    
-   
-    
 
 }
 .logo{
@@ -62,13 +59,7 @@ input{
 
 }
 
-.label{
-    
-    width: 1170px;
-    justify-content: flex-start; 
-    margin: 100px auto 0px auto; 
-    
-}
+
 
 a {
     color: #768298;
@@ -91,16 +82,6 @@ a {
     
 }
 
-.content {
-    align-self: center;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: flex-start; 
-    margin: 20px auto; 
-    max-width: 1170px;
-    
-}
-
 footer {
 
     flex-grow:1;
@@ -119,4 +100,67 @@ footer {
     border: 1px solid #EBEBF1;
     margin: 5px 10px;
     border-radius: 10px;
+}
+
+
+.label{
+    justify-content: flex-start; 
+    margin: 100px auto 0px auto; 
+    
+}
+
+.content {
+    align-self: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start; 
+    margin: 20px auto; 
+    max-width: 1170px;
+    
+}
+
+@media (max-width: 400px) {
+    .label{
+        width: 270px;
+        justify-content: center;  
+    }
+
+    .content {
+        flex-direction: column;
+        max-width: 270px; 
+    }
+
+    img{
+        width: 270px;
+        height: 120px;
+    
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1183px) {
+    .label{
+        width: 900px;
+        margin: 100px auto 0px auto;   
+    }
+    img{
+        width: 380px;
+        height: 169px;
+    
+    }
+
+    .content {
+        max-width: 900px;
+    }
+
+}
+
+@media (min-width: 1184px){
+    .label{
+        width: 1170px;
+        margin: 100px auto 0px auto; 
+    }
+
+    .content {
+        max-width: 1170px;
+    }
 }
