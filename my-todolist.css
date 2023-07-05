@@ -1,0 +1,100 @@
+[data-option="active"] .task:not([data-state="active"]),
+[data-option="completed"] .task:not([data-state="completed"]),
+[data-option="deleted"] .task:not([data-state="deleted"]) {
+    display: none;
+}
+
+[data-state="active"] .action-active,
+[data-state="completed"] .action-completed,
+[data-state="deleted"] .action-deleted {
+  display: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.todo{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.input-task{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50px;
+
+}
+input{
+    border: none;
+    width: 260px;
+    font-size: 23px;
+    border-radius: 50px;
+}
+
+.add-task{
+    color:#fff;
+    text-align: center;
+    font-size: 23px;
+    height: 38px;
+    width: 40px;
+    background-color: tomato;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+.options{
+    background-color: #42b840;
+}
+
+.action{
+    width:35px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 2px;
+}
+
+.action-active{
+    background-color: #42b840;
+    
+}
+.action-completed{
+    background-color: #e58020;
+}
+.action-deleted{
+    background-color: #c93232;
+    
+}
+
+
+.input-task{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50px;
+
+}

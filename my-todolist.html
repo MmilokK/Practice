@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-todolist</title>
+    <link rel ="stylesheet" href="my-todolist.css">
+    <script defer src="my-todolist.js"></script>
+</head>
+<body>
+    <div class="todo">
+        <div class = "input-task">
+            <input type = "text"> 
+            <span class = "add-task"><b class = "add-task">+</b></span>
+        </div>
+        <select class = "options">
+            <option value = "active">активные</option>
+            <option value = "completed">завершённые</option>
+            <option value = "deleted">удаленные</option>
+        </select>
+        <ul class = "output-tasks" data-option = "active"></ul>
+    </div>
+</body>
+</html>
