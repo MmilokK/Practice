@@ -176,8 +176,6 @@ button{
     animation-duration: 0.5s ;
     visibility: hidden;
     transition: 1s; 
-
-    
 }
 .point-menu:hover{
     cursor: pointer;
